@@ -1,23 +1,23 @@
 import React from "react";
-import { NavLink as Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
     <>
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul className="nav">
-          <li className="nav-item">
-            <Link to={'/'} className="nav-link" href="#">
+          <NavLink to={"/"} className="nav-item">
+            <a class="nav-link">
               <i className="mdi mdi-home menu-icon"></i>
               <span className="menu-title">Dashboard</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to={'/example'} className="nav-link" href="#">
-            <i className="mdi mdi-chart-pie menu-icon"></i>
+            </a>
+          </NavLink>
+          <NavLink to={"/example"} className="nav-item">
+            <a class="nav-link">
+              <i className="mdi mdi-chart-pie menu-icon"></i>
               <span className="menu-title">Example</span>
-            </Link>
-          </li>
+            </a>
+          </NavLink>
           <li className="nav-item">
             <a
               class="nav-link"
